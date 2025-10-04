@@ -1,73 +1,124 @@
-/* Fundo geral com gradiente */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #b486e7 0%, #6fa9eb 100%);
+    overflow-y: auto;
 }
 
-/* Card centralizado */
 .container {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    width: 350px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    transition: all 0.3s ease;
 }
 
-/* Títulos */
 h1 {
-    margin-bottom: 15px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.8em;
 }
 
 p {
-    margin-bottom: 20px;
-    color: #555;
+    margin-bottom: 25px;
+    color: #c9c7c7;
+    font-size: 0.95em;
 }
 
-/* Campos de entrada */
 input {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    background: #f1f1f1;
-    font-size: 14px;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
 }
 
-/* Botões */
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
 button {
     width: 100%;
-    padding: 12px;
-    background: #6a11cb;
+    padding: 15px;
+    background: #3911cb;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 button:hover {
-    background: #2575fc;
+    background: #8b3eff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
 }
 
-/* Links */
 a {
     display: block;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #6a11cb;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #4b009e;
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #007bff;
+}
+.link {
+    color :#c9c7c7
+}
+
+.container-home {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+.container-home h1 {
+    color: #dddcdfff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.container-home p {
+    font-size: 1.2em;
+    color: #c4c4c4ff;
+}
+
+.logout-btn:hover {
+    background: #8b3eff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
 }

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Criar Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -15,7 +17,7 @@
             <input type="password" name="senha" placeholder="Senha (mínimo 8 caracteres)" required minlength="8">
             <button type="submit">Registrar</button>
         </form>
-        <a href="Index.php?controller=usuario&action=login">Já tem conta? Faça login</a>
+        <a href="Index.php?controller=usuario&action=login" class="link">Já tem conta? Faça login</a>
     </div>
 </body>
 </html>
